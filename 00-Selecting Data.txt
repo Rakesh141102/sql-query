@@ -1,0 +1,134 @@
+
+SELECT * FROM employees;
+
+SELECT * FROM Departments;
+
+SELECT * FROM user_tables;
+
+-----------------------------------------------------------
+
+SELECT * FROM Employees;
+
+SELECT Employee_id, First_name, Last_name, salary FROM employees;
+
+
+Coding Standards :
+
+
+SELECT Employee_id, First_name, Last_name, salary FROM employees;
+
+SELECT Employee_id, First_name, Last_name, SALary FROM EMPLOYEES;
+
+SELECT 
+Employee_id, 
+First_name, 
+Last_name, 
+salary 
+FROM 
+employees;
+
+
+SELECT
+    Employee_id, 
+    First_name, 
+    Last_name, 
+    salary 
+FROM
+    employees;
+
+Arithmetic Expression
+
++  -  *  /
+
+SELECT Employee_id, salary, salary + 500
+FROM   Employees;
+
+BODMAS  - ( )  /  * +  -    
+
+34+4*5-39
+ 
+SELECT * FROM Employees;
+
+SELECT Commission_pct FROM Employees;
+
+Null  !=  0
+Null  !=  Null
+
++   -   *   /   :  null
+
+
+Alias
+
+
+SELECT First_name, Salary, salary+1000 AS INC_SAL FROM Employees;
+
+SELECT First_name, Salary, salary+1000 INC_SAL FROM Employees;
+
+SELECT First_name, Salary, salary+1000 as "INC_SAL" FROM Employees;
+
+SELECT First_name, Salary, salary+1000 "INC SAL" FROM Employees;
+
+
+||
+
+SELECT First_name, Salary FROM Employees;
+
+SELECT First_name || Salary FROM Employees;
+
+SELECT First_name ||'  '|| Salary FROM Employees;
+
+SELECT First_name ||' salary is   '|| Salary FROM Employees;
+
+
+Steven's salary is 24000
+Neena's salary is 17000
+Lex's salary is 17000
+
+SELECT First_name ||''s salary is   '|| Salary FROM Employees;
+
+SELECT First_name ||q'['s salary is   ]'|| Salary FROM Employees;
+
+
+Comment Line :
+---------------
+
+
+SELECT 
+  First_name  ,
+  Last_name   ,
+  --salary    ,
+  Department_id
+FROM
+  Employees;
+
+
+SELECT 
+  First_name,
+  Last_name ,
+  salary    ,      /*
+  Some info
+                   */
+  Department_id
+FROM
+  Employees;
+
+
+
+Dual Table
+----------
+
+
+SELECT 6+34762384 FROM Dual;
+
+
+
+
+SELECT ? , ?
+FROM   Departments;
+
+
+DESC Departments;
+
+
+DESCRIBE Employees;
+

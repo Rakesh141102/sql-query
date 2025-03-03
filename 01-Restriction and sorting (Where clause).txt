@@ -1,0 +1,147 @@
+
+
+select * from employees;
+
+select 
+    * 
+from 
+    employees
+where 
+    department_id = 90;
+
+String
+
+select * from employees
+where first_name = 'steven';
+
+select * from employees
+where first_name = 'Steven';
+
+Date  :  DD-MON-YY   ->  14-JUN-12
+
+Select first_name, Hire_date from employees
+where hire_date = '08-MAR-00';
+
+= >  >=  <  <=  
+<> (or) !=  (or)  ^=
+
+Between ...  and ....
+In  
+Like 
+is null
+
+select * from employees
+where salary = 24000;
+
+select * from employees
+where salary > 17000;
+
+select * from employees
+where salary >= 17000;
+
+select * from employees
+where first_name != 'Steven';
+
+between ... and ....  |  Not between ... and ...
+In                    |  Not in
+Like                  |  Not Like
+Is null               |  Is not Null
+
+between ... and ....  |  Not between ... and ...
+
+select * from employees
+where salary between 5000 and 10000;
+
+select * from employees
+where salary not between 5000 and 10000;
+
+select * from employees
+where salary in (24000, 10000, 17000);
+
+select * from employees
+where salary not in (24000, 10000, 17000);
+
+
+Like -> pattern matching operator
+
+     % -> something or zero    
+     _  -> position
+
+select * from employees
+where first_name like 'S%';
+
+select * from employees
+where first_name like 'S%n';
+
+select * from employees
+where first_name like '_u%';
+
+select * from employees
+where first_name like '_u_i%';
+
+select * from employees
+where first_name not like 'S%';
+
+select * from email
+where mail_id LIKE '__\_%' ESCAPE '\';
+
+select * from email
+where mail_id LIKE '__$_%' ESCAPE '$';
+
+select * from employees
+where commission_pct is null;
+
+select * from employees
+where commission_pct is not null;
+
+AND    OR
+
+select 
+     * 
+from 
+     employees
+where 
+     first_name = 'Steven' and 
+     salary = 24000;
+
+select 
+     * 
+from 
+     employees
+where 
+     first_name = 'Steven' or 
+     salary = 24000;
+
+
+ASc and DESC
+
+select * from employees;
+
+select * from employees
+order by department_id asc;
+
+select * from employees
+order by department_id desc;
+
+select * from employees
+order by department_id;
+
+select first_name, hire_date, salary as a
+from employees
+order by a desc;
+
+select first_name, department_id, salary
+from employees
+order by department_id, salary asc;
+
+
+
+
+
+
+
+
+
+
+
+
